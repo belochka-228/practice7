@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace pr7
+namespace practice7
 {
-    internal class Program
+    internal class Program 
     {
         static void Main(string[] args)
         {
