@@ -1,15 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace practice7
+class ArrayExample
 {
-    internal class Program
+    /// <summary>
+    /// Главный метод программы
+    /// </summary>
+    static void Main()
     {
-        static void Main(string[] args)
+        char[] letters = { 'f', 'r', 'e', 'd', ' ', 's', 'm', 'i', 't', 'h' };
+        string name = "";
+        int[] a = new int[10];
+        for (int i = 0; i < letters.Length; i++)
         {
+            name += letters[i];
+            a[i] = i + 1;
+            SendMessage(name, a[i]);
         }
+        Console.ReadKey();
+    }
+    /// <summary>
+    /// Выводит приветствие и число
+    /// </summary>
+    static void SendMessage(string name, int msg)
+    {
+        Console.WriteLine("Hello, " + name + "! Count to " + msg);
     }
 }
